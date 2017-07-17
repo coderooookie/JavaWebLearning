@@ -1,18 +1,5 @@
 package com.test.servlet;
-/**
- * @copyright: Copyright (c) 2015-2020 jd.com All Rights Reserved
- * @file: Login.java project: loginTest
- * @creator: hongshubin
- * @date: 2017/7/12
- */
 
-/**
- * @description: login test 
- * @author: hongshubin
- * @requireNo:
- * @createdate: 2017-07-12 13:52
- * @lastdate:
- */
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
@@ -21,9 +8,6 @@ import java.io.PrintWriter;
 
 import java.sql.*;
 
-/**
- * Created by hongshubin on 2017/7/12.
- */
 @WebServlet("/login")
 public class Login extends HttpServlet {
     @Override

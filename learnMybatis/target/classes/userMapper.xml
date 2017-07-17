@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="userMapper">
+    <!--根据ID获取对应的值  -->
+    <select id="findUserById" parameterType="int" resultType="com.test.Model.User">
+        select * from user_nothing where id = #{id}
+    </select>
+    <select id="getAllUsers" resultType="List">
+        select * from user_nothing
+    </select>
+    <insert id="addUser" parameterType="com.test.Model.User">
+        insert into user_nothing(username,password) values(#{username},#{password})
+    </insert>
+</mapper>
