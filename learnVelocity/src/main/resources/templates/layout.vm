@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>${page_title}</title>
+</head>
+<body>
+<div class="header">
+    #parse("/templates/header.vm")
+</div>
+<div class="container">
+    <div class="sub">
+        ##parse($sub)
+    </div>
+    <div class="main">
+        $screen_content
+    </div>
+</div>
+</body>
+</html>
