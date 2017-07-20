@@ -8,8 +8,16 @@
     <servlet-name>MyVelocityServlet</servlet-name>
     <servlet-class>com.test.MyVelocityViewServlet</servlet-class>
   </servlet>
+  <servlet>
+    <servlet-name>MyLayoutServlet</servlet-name>
+    <servlet-class>com.test.MyLayoutServlet</servlet-class>
+  </servlet>
   <servlet-mapping>
-    <servlet-name>MyVelocityServlet</servlet-name>
-    <url-pattern>/servlet</url-pattern>
+  <servlet-name>MyVelocityServlet</servlet-name>
+  <url-pattern>/servlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MyLayoutServlet</servlet-name>
+    <url-pattern>/layout</url-pattern>
   </servlet-mapping>
 </web-app>
